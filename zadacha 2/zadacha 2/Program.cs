@@ -17,11 +17,9 @@ namespace zadacha_2
             Console.WriteLine("Введите начальное число M:");
             int numberM = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите начальное число M:");
+            Console.WriteLine("Введите начальное число N:");
             int numberN = int.Parse(Console.ReadLine());
-
-            ///Метод нахождения суммы натуральных элементов в промежутке от M до N
-            void GapNumberSum(int firstNumber, int secondNumber, int sum)
+            void SumOfNumbers(int firstNumber, int secondNumber, int sum)
             {
                 if (firstNumber > secondNumber)
                 {
@@ -29,11 +27,11 @@ namespace zadacha_2
                     return;
                 }
                 sum = sum + (firstNumber++);
-                GapNumberSum(firstNumber, secondNumber, sum);
+                SumOfNumbers(firstNumber, secondNumber, sum);
             }
 
-            GapNumberSum(numberM, numberN, 0);
+            SumOfNumbers(numberM, numberN, 0);
         }
-                }
-            }
-        
+    }
+}
+
