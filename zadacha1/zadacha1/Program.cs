@@ -19,7 +19,7 @@ namespace zadacha1
             Console.WriteLine("Программа которая выводит все натуральные числа от N до 1!");
             Console.Write("Введите число N: ");
             int number = int.Parse(Console.ReadLine());
-                Console.Write("Ваш ряд натуральных чисел: ");
+            Console.Write("Ваш ряд натуральных чисел: ");
             void NumberCounter(int num)
             {
                 if (num < 0)
